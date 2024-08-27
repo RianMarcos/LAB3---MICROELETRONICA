@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Rian/Downloads/projeto 1 - contador-20240422T204137Z-001/projeto 1 - contador/lab3_contador/lab3_contador/contador_tb_isim_beh.exe" -prj "C:/Users/Rian/Downloads/projeto 1 - contador-20240422T204137Z-001/projeto 1 - contador/lab3_contador/lab3_contador/contador_tb_beh.prj" "work.contador_tb" 

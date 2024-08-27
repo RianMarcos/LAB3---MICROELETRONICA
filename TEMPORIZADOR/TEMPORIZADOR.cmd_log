@@ -1,0 +1,62 @@
+xst -intstyle ise -ifn "C:/Users/Rian/Documents/MICROELETRONICA/LAB3/LAB3_OK/TEMPORIZADOR/TEMPORIZADOR.xst" -ofn "C:/Users/Rian/Documents/MICROELETRONICA/LAB3/LAB3_OK/TEMPORIZADOR/TEMPORIZADOR.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 TEMPORIZADOR.ngc TEMPORIZADOR.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TEMPORIZADOR_map.ncd TEMPORIZADOR.ngd TEMPORIZADOR.pcf 
+par -w -intstyle ise -ol high -t 1 TEMPORIZADOR_map.ncd TEMPORIZADOR.ncd TEMPORIZADOR.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TEMPORIZADOR.twx TEMPORIZADOR.ncd -o TEMPORIZADOR.twr TEMPORIZADOR.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINS.ucf -p xc3s500e-fg320-5 TEMPORIZADOR.ngc TEMPORIZADOR.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINS.ucf -p xc3s500e-fg320-5 TEMPORIZADOR.ngc TEMPORIZADOR.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TEMPORIZADOR_map.ncd TEMPORIZADOR.ngd TEMPORIZADOR.pcf 
+par -w -intstyle ise -ol high -t 1 TEMPORIZADOR_map.ncd TEMPORIZADOR.ncd TEMPORIZADOR.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TEMPORIZADOR.twx TEMPORIZADOR.ncd -o TEMPORIZADOR.twr TEMPORIZADOR.pcf -ucf PINS.ucf 
+bitgen -intstyle ise -f TEMPORIZADOR.ut TEMPORIZADOR.ncd 
+xst -intstyle ise -ifn "C:/Users/Rian/Documents/MICROELETRONICA/LAB3/LAB3_OK/TEMPORIZADOR/TEMPORIZADOR.xst" -ofn "C:/Users/Rian/Documents/MICROELETRONICA/LAB3/LAB3_OK/TEMPORIZADOR/TEMPORIZADOR.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINS.ucf -p xc3s500e-fg320-5 TEMPORIZADOR.ngc TEMPORIZADOR.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TEMPORIZADOR_map.ncd TEMPORIZADOR.ngd TEMPORIZADOR.pcf 
+par -w -intstyle ise -ol high -t 1 TEMPORIZADOR_map.ncd TEMPORIZADOR.ncd TEMPORIZADOR.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TEMPORIZADOR.twx TEMPORIZADOR.ncd -o TEMPORIZADOR.twr TEMPORIZADOR.pcf -ucf PINS.ucf 
+bitgen -intstyle ise -f TEMPORIZADOR.ut TEMPORIZADOR.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINS.ucf -p xc3s500e-fg320-5 TEMPORIZADOR.ngc TEMPORIZADOR.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TEMPORIZADOR_map.ncd TEMPORIZADOR.ngd TEMPORIZADOR.pcf 
+par -w -intstyle ise -ol high -t 1 TEMPORIZADOR_map.ncd TEMPORIZADOR.ncd TEMPORIZADOR.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINS.ucf -p xc3s500e-fg320-5 TEMPORIZADOR.ngc TEMPORIZADOR.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TEMPORIZADOR_map.ncd TEMPORIZADOR.ngd TEMPORIZADOR.pcf 
+par -w -intstyle ise -ol high -t 1 TEMPORIZADOR_map.ncd TEMPORIZADOR.ncd TEMPORIZADOR.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TEMPORIZADOR.twx TEMPORIZADOR.ncd -o TEMPORIZADOR.twr TEMPORIZADOR.pcf -ucf PINS.ucf 
+bitgen -intstyle ise -f TEMPORIZADOR.ut TEMPORIZADOR.ncd 
+xst -intstyle ise -ifn "C:/Users/Rian/Documents/MICROELETRONICA/LAB3/LAB3_OK/TEMPORIZADOR/TEMPORIZADOR.xst" -ofn "C:/Users/Rian/Documents/MICROELETRONICA/LAB3/LAB3_OK/TEMPORIZADOR/TEMPORIZADOR.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINS.ucf -p xc3s500e-fg320-5 TEMPORIZADOR.ngc TEMPORIZADOR.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TEMPORIZADOR_map.ncd TEMPORIZADOR.ngd TEMPORIZADOR.pcf 
+par -w -intstyle ise -ol high -t 1 TEMPORIZADOR_map.ncd TEMPORIZADOR.ncd TEMPORIZADOR.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TEMPORIZADOR.twx TEMPORIZADOR.ncd -o TEMPORIZADOR.twr TEMPORIZADOR.pcf -ucf PINS.ucf 
+xst -intstyle ise -ifn "C:/Users/Rian/Documents/MICROELETRONICA/LAB3/LAB3_OK/TEMPORIZADOR/TEMPORIZADOR.xst" -ofn "C:/Users/Rian/Documents/MICROELETRONICA/LAB3/LAB3_OK/TEMPORIZADOR/TEMPORIZADOR.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINS.ucf -p xc3s500e-fg320-5 TEMPORIZADOR.ngc TEMPORIZADOR.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TEMPORIZADOR_map.ncd TEMPORIZADOR.ngd TEMPORIZADOR.pcf 
+par -w -intstyle ise -ol high -t 1 TEMPORIZADOR_map.ncd TEMPORIZADOR.ncd TEMPORIZADOR.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TEMPORIZADOR.twx TEMPORIZADOR.ncd -o TEMPORIZADOR.twr TEMPORIZADOR.pcf -ucf PINS.ucf 
+bitgen -intstyle ise -f TEMPORIZADOR.ut TEMPORIZADOR.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINS.ucf -p xc3s500e-fg320-5 TEMPORIZADOR.ngc TEMPORIZADOR.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TEMPORIZADOR_map.ncd TEMPORIZADOR.ngd TEMPORIZADOR.pcf 
+par -w -intstyle ise -ol high -t 1 TEMPORIZADOR_map.ncd TEMPORIZADOR.ncd TEMPORIZADOR.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TEMPORIZADOR.twx TEMPORIZADOR.ncd -o TEMPORIZADOR.twr TEMPORIZADOR.pcf -ucf PINS.ucf 
+bitgen -intstyle ise -f TEMPORIZADOR.ut TEMPORIZADOR.ncd 
+xst -intstyle ise -ifn "C:/Users/Rian/Documents/MICROELETRONICA/LAB3/LAB3_OK/TEMPORIZADOR/TEMPORIZADOR.xst" -ofn "C:/Users/Rian/Documents/MICROELETRONICA/LAB3/LAB3_OK/TEMPORIZADOR/TEMPORIZADOR.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINS.ucf -p xc3s500e-fg320-5 TEMPORIZADOR.ngc TEMPORIZADOR.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TEMPORIZADOR_map.ncd TEMPORIZADOR.ngd TEMPORIZADOR.pcf 
+par -w -intstyle ise -ol high -t 1 TEMPORIZADOR_map.ncd TEMPORIZADOR.ncd TEMPORIZADOR.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TEMPORIZADOR.twx TEMPORIZADOR.ncd -o TEMPORIZADOR.twr TEMPORIZADOR.pcf -ucf PINS.ucf 
+bitgen -intstyle ise -f TEMPORIZADOR.ut TEMPORIZADOR.ncd 
+xst -intstyle ise -ifn "C:/Users/Rian/Documents/MICROELETRONICA/LAB3/LAB3_OK/TEMPORIZADOR/TEMPORIZADOR.xst" -ofn "C:/Users/Rian/Documents/MICROELETRONICA/LAB3/LAB3_OK/TEMPORIZADOR/TEMPORIZADOR.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINS.ucf -p xc3s500e-fg320-5 TEMPORIZADOR.ngc TEMPORIZADOR.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TEMPORIZADOR_map.ncd TEMPORIZADOR.ngd TEMPORIZADOR.pcf 
+par -w -intstyle ise -ol high -t 1 TEMPORIZADOR_map.ncd TEMPORIZADOR.ncd TEMPORIZADOR.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TEMPORIZADOR.twx TEMPORIZADOR.ncd -o TEMPORIZADOR.twr TEMPORIZADOR.pcf -ucf PINS.ucf 
+xst -intstyle ise -ifn "C:/Users/Rian/Documents/MICROELETRONICA/LAB3/LAB3_OK/TEMPORIZADOR/TEMPORIZADOR.xst" -ofn "C:/Users/Rian/Documents/MICROELETRONICA/LAB3/LAB3_OK/TEMPORIZADOR/TEMPORIZADOR.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINS.ucf -p xc3s500e-fg320-5 TEMPORIZADOR.ngc TEMPORIZADOR.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TEMPORIZADOR_map.ncd TEMPORIZADOR.ngd TEMPORIZADOR.pcf 
+par -w -intstyle ise -ol high -t 1 TEMPORIZADOR_map.ncd TEMPORIZADOR.ncd TEMPORIZADOR.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TEMPORIZADOR.twx TEMPORIZADOR.ncd -o TEMPORIZADOR.twr TEMPORIZADOR.pcf -ucf PINS.ucf 
+xst -intstyle ise -ifn "C:/Users/Rian/Documents/MICROELETRONICA/LAB3/LAB3_OK/TEMPORIZADOR/TEMPORIZADOR.xst" -ofn "C:/Users/Rian/Documents/MICROELETRONICA/LAB3/LAB3_OK/TEMPORIZADOR/TEMPORIZADOR.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINS.ucf -p xc3s500e-fg320-5 TEMPORIZADOR.ngc TEMPORIZADOR.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TEMPORIZADOR_map.ncd TEMPORIZADOR.ngd TEMPORIZADOR.pcf 
+par -w -intstyle ise -ol high -t 1 TEMPORIZADOR_map.ncd TEMPORIZADOR.ncd TEMPORIZADOR.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TEMPORIZADOR.twx TEMPORIZADOR.ncd -o TEMPORIZADOR.twr TEMPORIZADOR.pcf -ucf PINS.ucf 

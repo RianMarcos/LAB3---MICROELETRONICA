@@ -1,0 +1,8 @@
+V3 3
+FL C:/Users/Aluno/virotia/micro/lab3/lab3_contador/contador_module.vhd 2024/04/19.17:40:21 P.20131013
+EN work/contador_module 1713559225 \
+      FL C:/Users/Aluno/virotia/micro/lab3/lab3_contador/contador_module.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177
+AR work/contador_module/Behavioral 1713559226 \
+      FL C:/Users/Aluno/virotia/micro/lab3/lab3_contador/contador_module.vhd \
+      EN work/contador_module 1713559225

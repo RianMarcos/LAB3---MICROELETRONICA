@@ -1,0 +1,437 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: contador_module.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "contador_module.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "contador_module"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : contador_module
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Aluno/virotia/micro/lab3/lab3_contador/contador_module.vhd" in Library work.
+Entity <contador_module> compiled.
+Entity <contador_module> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <contador_module> in library <work> (architecture <behavioral>) with generics.
+	freq = 5
+	periodo = 1
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <contador_module> in library <work> (Architecture <behavioral>).
+	freq = 5
+	periodo = 1
+Entity <contador_module> analyzed. Unit <contador_module> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <contador_module>.
+    Related source file is "C:/Users/Aluno/virotia/micro/lab3/lab3_contador/contador_module.vhd".
+    Found 16x7-bit ROM for signal <dig>.
+    Found 3-bit register for signal <aux_clk>.
+    Found 1-bit xor2 for signal <aux_clk$xor0000> created at line 41.
+    Found 4-bit register for signal <cont>.
+    Found 4-bit addsub for signal <cont$share0000>.
+    Found 1-bit register for signal <deb>.
+    Found 3-bit adder for signal <deb$add0000> created at line 42.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <contador_module> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 2
+ 3-bit adder                                           : 1
+ 4-bit addsub                                          : 1
+# Registers                                            : 3
+ 1-bit register                                        : 1
+ 3-bit register                                        : 1
+ 4-bit register                                        : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 2
+ 3-bit adder                                           : 1
+ 4-bit addsub                                          : 1
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <contador_module> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block contador_module, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : contador_module.ngr
+Top Level Output File Name         : contador_module
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 16
+
+Cell Usage :
+# BELS                             : 25
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 1
+#      LUT2_D                      : 1
+#      LUT3                        : 1
+#      LUT3_L                      : 1
+#      LUT4                        : 15
+#      MUXF5                       : 3
+#      VCC                         : 1
+# FlipFlops/Latches                : 8
+#      FDC                         : 3
+#      FDCE                        : 4
+#      FDE                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 15
+#      IBUF                        : 4
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                       10  out of   4656     0%  
+ Number of Slice Flip Flops:              8  out of   9312     0%  
+ Number of 4 input LUTs:                 20  out of   9312     0%  
+ Number of IOs:                          16
+ Number of bonded IOBs:                  16  out of    232     6%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 4     |
+deb                                | NONE(cont_0)           | 4     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 7     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 3.210ns (Maximum Frequency: 311.531MHz)
+   Minimum input arrival time before clock: 4.068ns
+   Maximum output required time after clock: 5.640ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.210ns (frequency: 311.531MHz)
+  Total number of paths / destination ports: 15 / 4
+-------------------------------------------------------------------------
+Delay:               3.210ns (Levels of Logic = 2)
+  Source:            aux_clk_1 (FF)
+  Destination:       deb (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: aux_clk_1 to deb
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.514   0.529  aux_clk_1 (aux_clk_1)
+     LUT3_L:I2->LO         1   0.612   0.103  deb_and0000_SW1 (N11)
+     LUT4:I3->O            1   0.612   0.357  deb_and0000 (deb_and0000)
+     FDE:CE                    0.483          deb
+    ----------------------------------------
+    Total                      3.210ns (2.221ns logic, 0.989ns route)
+                                       (69.2% logic, 30.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'deb'
+  Clock period: 2.660ns (frequency: 376.003MHz)
+  Total number of paths / destination ports: 19 / 4
+-------------------------------------------------------------------------
+Delay:               2.660ns (Levels of Logic = 2)
+  Source:            cont_0 (FF)
+  Destination:       cont_1 (FF)
+  Source Clock:      deb rising
+  Destination Clock: deb rising
+
+  Data Path: cont_0 to cont_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            13   0.514   0.988  cont_0 (cont_0)
+     LUT4:I0->O            1   0.612   0.000  cont_mux0003<2>1_F (N17)
+     MUXF5:I0->O           1   0.278   0.000  cont_mux0003<2>1 (cont_mux0003<2>)
+     FDCE:D                    0.268          cont_1
+    ----------------------------------------
+    Total                      2.660ns (1.672ns logic, 0.988ns route)
+                                       (62.9% logic, 37.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 6 / 5
+-------------------------------------------------------------------------
+Offset:              4.068ns (Levels of Logic = 3)
+  Source:            rst (PAD)
+  Destination:       deb (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to deb
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.106   0.795  rst_IBUF (rst_IBUF)
+     LUT3_L:I0->LO         1   0.612   0.103  deb_and0000_SW1 (N11)
+     LUT4:I3->O            1   0.612   0.357  deb_and0000 (deb_and0000)
+     FDE:CE                    0.483          deb
+    ----------------------------------------
+    Total                      4.068ns (2.813ns logic, 1.255ns route)
+                                       (69.1% logic, 30.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'deb'
+  Total number of paths / destination ports: 10 / 7
+-------------------------------------------------------------------------
+Offset:              2.985ns (Levels of Logic = 3)
+  Source:            up_down (PAD)
+  Destination:       cont_1 (FF)
+  Destination Clock: deb rising
+
+  Data Path: up_down to cont_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.106   0.721  up_down_IBUF (up_down_IBUF)
+     LUT2:I0->O            1   0.612   0.000  cont_mux0003<2>1_G (N18)
+     MUXF5:I1->O           1   0.278   0.000  cont_mux0003<2>1 (cont_mux0003<2>)
+     FDCE:D                    0.268          cont_1
+    ----------------------------------------
+    Total                      2.985ns (2.264ns logic, 0.721ns route)
+                                       (75.9% logic, 24.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'deb'
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Offset:              5.640ns (Levels of Logic = 2)
+  Source:            cont_0 (FF)
+  Destination:       dig<1> (PAD)
+  Source Clock:      deb rising
+
+  Data Path: cont_0 to dig<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            13   0.514   0.988  cont_0 (cont_0)
+     LUT4:I0->O            1   0.612   0.357  Mrom_dig111 (dig_1_OBUF)
+     OBUF:I->O                 3.169          dig_1_OBUF (dig<1>)
+    ----------------------------------------
+    Total                      5.640ns (4.295ns logic, 1.345ns route)
+                                       (76.2% logic, 23.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.39 secs
+ 
+--> 
+
+Total memory usage is 4497636 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

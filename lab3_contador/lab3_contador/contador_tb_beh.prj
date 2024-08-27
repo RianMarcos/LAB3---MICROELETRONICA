@@ -1,0 +1,2 @@
+vhdl work "contador_module.vhd"
+vhdl work "contador_tb.vhd"

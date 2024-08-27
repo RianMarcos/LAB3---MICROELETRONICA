@@ -1,0 +1,24 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Apr 19 17:40:36 2024
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "push_b" LOCATE = SITE "H13" LEVEL 1;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "ena" LOCATE = SITE "G18" LEVEL 1;
+COMP "anodo<0>" LOCATE = SITE "F17" LEVEL 1;
+COMP "anodo<1>" LOCATE = SITE "H17" LEVEL 1;
+COMP "dig<0>" LOCATE = SITE "H14" LEVEL 1;
+COMP "anodo<2>" LOCATE = SITE "C18" LEVEL 1;
+COMP "up_down" LOCATE = SITE "K18" LEVEL 1;
+COMP "dig<1>" LOCATE = SITE "J17" LEVEL 1;
+COMP "anodo<3>" LOCATE = SITE "F15" LEVEL 1;
+COMP "dig<2>" LOCATE = SITE "G14" LEVEL 1;
+COMP "dig<3>" LOCATE = SITE "D16" LEVEL 1;
+COMP "dig<4>" LOCATE = SITE "D17" LEVEL 1;
+COMP "dig<5>" LOCATE = SITE "F18" LEVEL 1;
+COMP "dig<6>" LOCATE = SITE "L18" LEVEL 1;
+COMP "rst" LOCATE = SITE "H18" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

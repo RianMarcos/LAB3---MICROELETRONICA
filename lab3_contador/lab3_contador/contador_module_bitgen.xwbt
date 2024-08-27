@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Aluno\virotia\micro\lab3\lab3_contador\contador_module.ncd
+OUTFILE=C:\Users\Aluno\virotia\micro\lab3\lab3_contador\contador_module.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=C:\Users\Aluno\virotia\micro\lab3\lab3_contador
+LICENSE=WebPack
+USER_INFO=210743554_0_0_851
